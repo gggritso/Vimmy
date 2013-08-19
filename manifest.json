@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+
+	"name": "Vimmy",
+	"description": "Simple Vi keybindings.",
+	"version": "1.0.4",
+
+	"icons": {
+		"16": "icons/16.png",
+		"48": "icons/48.png",
+		"128": "icons/128.png"
+	},
+
+	"content_scripts": [
+		{
+			"matches": ["*://*/*"],
+			"css": ["vimmy.css"],
+			"js": ["vendor/jquery.js", "vendor/jquery.viewport.js", "vimmy.js"] 
+		}
+	],
+
+	"background": {
+	  "scripts": [ "background.js" ],
+	  "persistent": false
+	}
+}

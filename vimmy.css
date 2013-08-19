@@ -1,0 +1,50 @@
+.vimmy-hint {
+	z-index: 2147483646;
+	height: 16px;
+	box-sizing: border-box;
+
+	position: absolute;
+
+	font-size: 13px;
+	line-height: 13px;
+
+	background: black;
+	border: none;
+
+	border-radius: 3px;
+	padding: 0 5px 0 5px;
+
+	letter-spacing: 0;
+}
+
+.vimmy-hint b {
+	display: inline;
+	font-weight: normal;
+	-webkit-font-smoothing: subpixel-antialiased;
+	color: white;
+	text-shadow: none ;
+
+	font-family: "Courier New", "Courier", monospace ;
+	font-size: 13px;
+	line-height: 13px;
+	padding: 0;
+}
+
+.vimmy-hint .typed {
+	color: red;
+}
+
+.vimmy-hint:before {
+	content: "";
+
+	position: absolute;
+	top: 1px;
+	left: 95%;
+
+	width: 0;
+	height: 0;
+
+	border: solid;
+	border-color: transparent transparent transparent black;
+	border-width: 7px 7px 7px 7px;
+}
